@@ -1,23 +1,91 @@
 /* font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif; */
-body {
+                        
+                          /*-------RESET------*/
+    body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
     }
-ul,
-ol {
-    list-style-type: none;
+    h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-a {
+    p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+    ul,
+    ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+    a {
     color:inherit;
     text-decoration: none;
 }
-button {
+    button {
     cursor: pointer;
-}
-/*---------------------------Hede--------------------*/
-.logo {
+} 
+    img {
+     display: block;
+     max-width: 100%;
+    }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+        
+    /*----------COMMON----------*/
+    .container {
+        width: 1158px;
+        padding-left: 15px; 
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-paddings {
+        padding-top: 60;
+        padding-bottom: 60;
+    }
+    /*---------------------------Header--------------------*/ 
+    
+
+    .page-header {
+       border-bottom: 1px solid #e7e9fc;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+    }
+    .nav-header {
+        display: flex;
+      align-items: center;
+    } 
+    .nav-list { display: flex;
+      align-items: center;
+      gap: 40px;
+     }
+     .contacts-list {
+        display: flex;
+      align-items: center;
+     }
+     .header-logo {
+        margin-right: 76px;
+        padding: 24px 0;
+     }
+    .logo {
     font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
@@ -30,21 +98,30 @@ color: #4d5ae5;
     color: #2e2f42;
 }
 .footer-logo .logo-part {
-    color: #f4f4fd;;
+    color: #f4f4fd;
 }
 
 .nav-link {
-font-weight: 500;
+display: block;
+padding: 24px 0;
+    font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #2e2f42;;
+color: #2e2f42;
 }
 .contacts {
+    margin-left: auto;
     font-style: normal;
 }
+.contacts-list {
+gap: 40px; 
+
+}
 .contacts-link {
-font-size: 16px;
+padding: 24px 0;
+display: block;
+    font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:#434455 ;
@@ -62,30 +139,58 @@ color:#434455 ;
     text-align: center;
     color: #2e2f42;
 }
+
+/*---------------------------Header END --------------------*/
+
 /*------------HERO SECTION-------*/
+
+.hero-container {
+width: 1440px;
+height: 600px;
+   
+}
 .hero-section {
-    background: #2e2f42;
-}
+     
+        padding: 188px 0;
+        background-color: #2e2f42;
+      }
+      
+
 .main-title {
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-text-align: center;
-color: #fff;
-}
-.order-service-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
     color: #fff;
-    background-color: #4d5ae5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+
+
+.order-service-btn {
+    border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order-service-btn:hover,
 .order-service-btn:focus {
     color:#fff;
     background-color: #404bbf;
+    cursor: pointer;
 }
 
 
@@ -94,26 +199,50 @@ color: #fff;
 
 
 /*---------------Benefits section------*/
+.benefits-section {
+    padding: 120px 15px 120px 15px;
+
+}
+.benefits-list {
+    display: flex;
+    column-gap: 24px;
+
+    
+  }
+  .benefits-item {
+  width: 264px;
+  padding-bottom: 35px;
+
+  } 
 .benefits-third-header {
+margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-}
+
+  }
 .benefits-text {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+text-align: start;
 
-}
+  }
+
+    
+
+
+
 /*---------------Benefits END section------*/
 
 /*---------------Team Section------*/
 .team-section {
-    background-color: #F4F4FD
+padding-top: 50;    
+background-color: #F4F4FD
 }
 .team-title {
 font-weight: 700;
@@ -122,11 +251,24 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
-text-transform: capitalize
+text-transform: capitalize;
+margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+
 }
 .team-item {
+    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+
 }
+.team-wrapper {
+    padding: 32px 0;
+  }  
 .team-names {
 font-weight: 500;
 font-size: 20px;
@@ -143,10 +285,30 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
 }
+.team-list-img,
+.portfolio-list-img {
+  display: block;
+}
 
+.team-section {
+  background-color: #f4f4fd;
+  text-transform: capitalize;
+  padding: 120px;
+}
+.team-card-container {
+  display: flex;
+  align-items: flex-start;
+}
 /*---------------Team END Section------*/
 
 /*---------------Portfolio Section------*/
+.portfolio-card-set {
+display: flex;
+flex-wrap: wrap;
+row-gap: 48px;
+column-gap: 24px;
+margin-bottom: 120px;
+}
 .portfolio-title {
 font-weight: 700;
 font-size: 36px;
@@ -155,6 +317,8 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
+margin-top: 120px;
+margin-bottom: 72px;
 }
 .portfolio-service-name {
 font-weight: 500;
@@ -162,9 +326,15 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding-bottom: 8px;
+padding-top: 32px;
+padding-left: 16px;
 }
 .portfolio-item {
     background: #fff;
+    border-bottom: 1px solid #e7e9fc;
+    width: calc((100% - 48px) / 3);
+
 }
 .portfolio-position {
 font-weight: 400;
@@ -172,6 +342,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+padding-bottom: 32px;
+padding-left: 16px;
 }
 
 /*---------------Footer Section-----*/
@@ -184,6 +356,19 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+}
+.footer-logo-flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  margin-bottom: 16px;
+}
+.footer-text-flex {
+  display: flex;
+max-width: 264px;
+padding-bottom: 100px;
+
+
 }
 
 /*---------------Footer END Section------*/
