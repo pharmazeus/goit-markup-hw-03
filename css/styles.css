@@ -73,7 +73,8 @@ font-family: "Roboto", sans-serif; */
         display: flex;
       align-items: center;
     } 
-    .nav-list { display: flex;
+    .nav-list { 
+      display: flex;
       align-items: center;
       gap: 40px;
      }
@@ -97,9 +98,7 @@ color: #4d5ae5;
 .header-logo .logo-part {
     color: #2e2f42;
 }
-.footer-logo .logo-part {
-    color: #f4f4fd;
-}
+
 
 .nav-link {
 display: block;
