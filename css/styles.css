@@ -252,7 +252,6 @@ margin-bottom: 72px;
 .team-list {
     display: flex;
     gap: 24px;
-
 }
 .team-item {
     background-color: #ffffff;
@@ -271,6 +270,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 .team-position {
 font-weight: 400;
@@ -279,20 +279,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
-}
-.team-list-img,
-.portfolio-list-img {
-  display: block;
-}
 
-.team-section {
-  background-color: #f4f4fd;
-  text-transform: capitalize;
-  padding: 120px;
-}
-.team-card-container {
-  display: flex;
-  align-items: flex-start;
 }
 /*---------------Team END Section------*/
 
