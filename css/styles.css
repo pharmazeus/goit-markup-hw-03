@@ -236,7 +236,7 @@ text-align: start;
 
 /*---------------Team Section------*/
 .team-section {
-padding-top: 50;    
+padding: 120px 0; 
 background-color: #F4F4FD
 }
 .team-title {
